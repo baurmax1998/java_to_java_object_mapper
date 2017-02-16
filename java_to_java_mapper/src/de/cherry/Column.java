@@ -17,5 +17,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 public @interface Column {
 
     String   name() default "";
+    Class converter() default SimpleConverter.class;
+    
 
 }

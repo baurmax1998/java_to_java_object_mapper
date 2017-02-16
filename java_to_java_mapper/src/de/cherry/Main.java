@@ -18,9 +18,9 @@ public class Main {
         DestinationObjekt destination = new DestinationObjekt();
         JavaToJavaMapper javaToJavaMapper = new JavaToJavaMapper(destination.getClass());
 
-        javaToJavaMapper.map(sourceObjekts.get(0), destination);
+        javaToJavaMapper.map(new SourceObjekt("petra",94, Geschlecht.WEIBLICH), destination);
 
-
+        System.out.println();
 
 
     }

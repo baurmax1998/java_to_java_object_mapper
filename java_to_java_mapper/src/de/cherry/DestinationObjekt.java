@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlList;
 public class DestinationObjekt {
     @Column
     private String name;
-    @Column
+    @Column(converter = ToStringConverter.class)
     private String alter;
-    @Column(name = "typ")
+    @Column(name = "typ", converter = ToStringConverter.class)
     private String geschlecht;
 
     public DestinationObjekt() {
